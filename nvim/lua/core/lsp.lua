@@ -9,6 +9,7 @@ lspconfig['denols'].setup({});
 lspconfig['clangd'].setup({});
 lspconfig['hls'].setup({});
 lspconfig['pyright'].setup({});
+lspconfig['marksman'].setup({});
 
 lspconfig['lua_ls'].setup({
   capabilities = capabilities,
