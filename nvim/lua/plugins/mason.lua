@@ -2,7 +2,7 @@ return {
   'williamboman/mason.nvim',
   dependencies = {
     'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig',
+    'neovim/nvim-lspconfig'
   },
   config = function()
     require('mason').setup({
@@ -16,7 +16,7 @@ return {
     })
 
     require('mason-lspconfig').setup({
-      ensure_installed = { 'rust_analyzer', 'lua_ls', 'hls', 'marksman', 'clangd', 'denols' },
+      ensure_installed = { 'rust_analyzer', 'lua_ls', 'hls', 'marksman', 'clangd', 'denols', 'emmet_ls' },
       automatic_installation = true
     })
   end

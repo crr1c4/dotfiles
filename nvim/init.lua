@@ -1,6 +1,12 @@
 require("core.settings")
-require("core.lazy")
-require("core.lsp")
+require("core.plugins")
 require("core.keymaps")
 
-vim.cmd [[colorscheme catppuccin]]
+
+
+
+
+
+
+
+vim.cmd [[colorscheme tokyonight]]

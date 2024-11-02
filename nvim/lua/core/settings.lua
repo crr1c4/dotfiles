@@ -6,8 +6,6 @@ local options = {
   cursorline = true,
   expandtab = true,
   fileencoding = 'utf-8',
-  -- foldopen = 'all',
-  -- foldmethod = 'indent',
   ignorecase = true,
   mouse = 'a',
   number = true,
@@ -19,8 +17,7 @@ local options = {
   shiftwidth = 2,
   termguicolors = true,
   title = true,
-  wrap = false,
-  -- virtualedit = "insert"
+  wrap = true,
 }
 
 for key, value in pairs(options) do
@@ -30,13 +27,13 @@ end
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
 
-    vim.diagnostic.config({
-      signs = {
-        text = {
-          [vim.diagnostic.severity.ERROR] = '',
-          [vim.diagnostic.severity.WARN] = '',
-          [vim.diagnostic.severity.HINT] = '󰍉',
-          [vim.diagnostic.severity.INFO] = '',
-        },
-      },
-    })
+vim.diagnostic.config({
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '',
+      [vim.diagnostic.severity.WARN] = '',
+      [vim.diagnostic.severity.HINT] = '󰍉',
+      [vim.diagnostic.severity.INFO] = '',
+    },
+  },
+})

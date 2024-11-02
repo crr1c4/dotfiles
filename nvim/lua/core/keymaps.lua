@@ -31,10 +31,3 @@ keymap('n', '<leader>lf', vim.lsp.buf.format, opts)
 keymap('n', '<leader>lh', vim.lsp.buf.hover, opts)
 keymap('n', '<leader>lr', vim.lsp.buf.rename, opts)
 keymap('n', '<leader>lq', vim.diagnostic.open_float, opts)
-
-
-keymap('n', '<A-h>', '<cmd>BufferPrevious<cr>', opts)
-keymap('n', '<A-j>', '<cmd>BufferMovePrevious<cr>', opts)
-keymap('n', '<A-k>', '<cmd>BufferMoveNext<cr>', opts)
-keymap('n', '<A-l>', '<cmd>BufferNext<cr>', opts)
-keymap('n', '<A-q>', '<cmd>BufferClose<cr>', opts)

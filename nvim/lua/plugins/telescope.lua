@@ -9,5 +9,4 @@ return {
     { '<leader>tb', '<cmd>Telescope git_branches<cr>', desc = 'Find todos.' },
     { '<leader>tc', '<cmd>Telescope git_commits<cr>',  desc = 'Find todos.' },
   },
-  dependencies = { 'nvim-lua/plenary.nvim' }
 }
