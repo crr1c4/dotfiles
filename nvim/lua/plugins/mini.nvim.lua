@@ -7,5 +7,6 @@ return {
     require('mini.hipatterns').setup()
     require('mini.comment').setup()
     require('mini.misc').setup()
+    -- require('mini.icons').setup()
   end
 }

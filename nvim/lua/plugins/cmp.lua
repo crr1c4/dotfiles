@@ -1,9 +1,15 @@
 return {
   'saghen/blink.cmp',
-  event = { 'LspAttach' },
-  version = 'v0.*',
+  version = '*',
   opts = {
-    keymap = "enter", -- TODO: Change accept to <CR>
-    nerd_font_variant = 'normal',
-  }
+    keymap = { preset = 'enter' },
+    appearance = {
+      nerd_font_variant = 'mono'
+    },
+    sources = {
+      default = { 'lsp', 'path' },
+    },
+  },
+  opts_extend = { 'sources.default' }
 }
+
