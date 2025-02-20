@@ -128,3 +128,7 @@ padding= {x = 0, y = 0}
 
 [env]
 term = "xterm-256color"
+
+[shell]
+program = "tmux"
+args = ["new-session", "-A", "-D", "-s", "default"]

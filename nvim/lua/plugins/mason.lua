@@ -16,7 +16,7 @@ return {
     })
 
     require('mason-lspconfig').setup({
-      ensure_installed = { 'rust_analyzer', 'lua_ls', 'hls', 'marksman', 'clangd', 'denols', 'emmet_ls' },
+      ensure_installed = { 'emmet_ls', 'rust_analyzer', 'lua_ls', 'hls', 'marksman', 'clangd', 'denols', 'emmet_ls', 'superhtml' },
       automatic_installation = true
     })
   end
