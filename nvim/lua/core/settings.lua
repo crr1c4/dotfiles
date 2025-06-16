@@ -26,14 +26,4 @@ end
 
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
-
-vim.diagnostic.config({
-  signs = {
-    text = {
-      [vim.diagnostic.severity.ERROR] = '',
-      [vim.diagnostic.severity.WARN] = '',
-      [vim.diagnostic.severity.HINT] = '󰍉',
-      [vim.diagnostic.severity.INFO] = '',
-    },
-  },
-})
+vim.o.winborder = 'rounded'

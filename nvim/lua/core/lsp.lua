@@ -1,42 +1,30 @@
-local lspconfig = require('lspconfig')
+vim.lsp.config('*', { capabilities = require('blink.cmp').get_lsp_capabilities() })
 vim.lsp.inlay_hint.enable(true)
-local capabilities = require('blink.cmp').get_lsp_capabilities()
--- local util = require 'lspconfig.util'
--- local capabilities = vim.lsp.protocol.make_client_capabilities()
 
-lspconfig['rust_analyzer'].setup({ capabilities = capabilities });
-lspconfig['denols'].setup({ capabilities = capabilities });
-lspconfig['clangd'].setup({ capabilities = capabilities });
--- lspconfig['hls'].setup({ capabilities = capabilities });
-lspconfig['pyright'].setup({ capabilities = capabilities });
-lspconfig['marksman'].setup({ capabilities = capabilities });
-lspconfig['tailwindcss'].setup({ capabilities = capabilities });
-lspconfig['cssls'].setup({ capabilities = capabilities });
-lspconfig['superhtml'].setup({ capabilities = capabilities });
--- lspconfig['ts_ls'].setup({
---   capabilities = capabilities,
---   root_dir = util.root_pattern('index.html')
--- });
-
-lspconfig['emmet_ls'].setup({
-  capabilities = capabilities,
-  filetypes = { 'html', 'javascriptreact', 'typescriptreact' },
-  init_options = {
-    html = {
-      options = {
-        ['bem.enabled'] = true,
-      },
+vim.diagnostic.config({
+  virtual_lines = true,
+  virtual_text = false,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+  float = {
+      -- border = "rounded",
+      source = true,
+  },
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '',
+      [vim.diagnostic.severity.WARN] = '',
+      [vim.diagnostic.severity.HINT] = '󰍉',
+      [vim.diagnostic.severity.INFO] = '',
     },
-  }
+  },
 })
 
-lspconfig['lua_ls'].setup({
-  capabilities = capabilities,
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { 'vim' }
-      }
-    }
-  }
-});
+vim.lsp.enable({
+  'denols',
+  'lua_ls',
+  'rust_analyzer',
+})
+
+

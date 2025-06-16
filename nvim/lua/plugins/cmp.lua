@@ -1,6 +1,6 @@
 return {
   'saghen/blink.cmp',
-  version = '*',
+  version = '1.*',
   opts = {
     keymap = { preset = 'enter' },
     appearance = {
@@ -12,4 +12,3 @@ return {
   },
   opts_extend = { 'sources.default' }
 }
-
