@@ -4,7 +4,7 @@ return {
   opts = {
     completion = {
       trigger = { show_on_keyboard = true },
-      list = { selection = { preselect = true, auto_insert = true }},
+      list = { selection = { preselect = true, auto_insert = true } },
       menu = {
         auto_show = true,
         draw = {
@@ -26,7 +26,19 @@ return {
       default = { 'lsp', 'path' },
     },
     fuzzy = { implementation = 'prefer_rust_with_warning' },
-    signature = { enabled = true, window = { show_documentation = false } }
+    signature = { enabled = true, window = { show_documentation = false } },
+    cmdline = {
+      keymap = {
+        ['<Tab>'] = { 'show', 'accept' },
+      },
+      completion = {
+        menu = {
+          auto_show = function()
+            return vim.fn.getcmdtype() == ':'
+          end,
+        },
+      }
+    }
   },
   opts_extend = { 'sources.default' }
 }

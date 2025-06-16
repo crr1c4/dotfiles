@@ -1,9 +1,6 @@
 return {
   'nvim-lualine/lualine.nvim',
   opts = {
-    options = {
-      theme = 'kanagawa',
-    },
     extensions = { 'neo-tree' },
     sections = {
       lualine_a = { 'mode' },

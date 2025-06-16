@@ -4,4 +4,4 @@ require("core.lsp")
 require("core.keymaps")
 require("core.autocommands")
 
-vim.cmd [[colorscheme kanagawa]]
+vim.cmd [[colorscheme kanagawa-paper]]
