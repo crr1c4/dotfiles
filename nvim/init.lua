@@ -3,4 +3,4 @@ require("core.plugins")
 require("core.lsp")
 require("core.keymaps")
 
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme kanagawa]]
