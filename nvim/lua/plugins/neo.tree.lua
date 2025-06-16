@@ -24,7 +24,8 @@ return {
         visible = true,
         hide_dotfiles = true,
         hide_gitignored = false
-      }
+      },
+      hijack_netrw_behavior = 'disabled'
     }
   }
 }
