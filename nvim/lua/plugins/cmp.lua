@@ -3,7 +3,10 @@ return {
   version = '1.*',
   opts = {
     completion = {
-      trigger = { show_on_keyboard = true },
+      trigger = {
+        show_on_keyword = true,
+        show_on_trigger_character = true
+      },
       list = { selection = { preselect = true, auto_insert = true } },
       menu = {
         auto_show = true,
@@ -18,7 +21,7 @@ return {
       documentation = { auto_show = true, auto_show_delay_ms = 500 },
       ghost_text = { enabled = true }
     },
-    keymap = { preset = 'enter' },
+    keymap = { preset = 'super-tab' },
     appearance = {
       nerd_font_variant = 'mono'
     },
