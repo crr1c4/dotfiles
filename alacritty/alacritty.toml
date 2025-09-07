@@ -5,6 +5,7 @@ import = [
 ]
 
 [window]
+dimensions = { lines = 25 , columns = 125 }
 padding= { x = 0, y = 0 }
 opacity = 0.95
 
