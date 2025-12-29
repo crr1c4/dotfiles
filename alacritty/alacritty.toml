@@ -5,16 +5,17 @@ import = [
 ]
 
 [window]
-dimensions = { lines = 25 , columns = 125 }
-padding= { x = 0, y = 0 }
+# dimensions = { lines = 35 , columns = 150 }
+decorations = "Full"
+padding = { x = 0, y = 0 }
 opacity = 0.95
 
 [font] 
-normal = {family = "SpaceMono Nerd Font", style = "normal" }
-bold = {family = "SpaceMono Nerd Font", style = "bold" }
-italic = {family = "SpaceMono Nerd Font", style = "italic" }
-bold_italic = {family = "SpaceMono NerdFont", style = "bold italic" }
-size = 11
+normal = {family = "GohuFont 11 Nerd Font Mono", style = "normal" }
+bold = {family = "GohuFont 11 Nerd Font Mono", style = "bold" }
+italic = {family = "GohuFont 11 Nerd Font Mono", style = "italic" }
+bold_italic = {family = "GohuFont 11 Nerd Font Mono", style = "bold italic" }
+size = 12
 offset= { x = 0, y = 2 }
 
 [cursor]
